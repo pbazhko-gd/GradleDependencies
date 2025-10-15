@@ -13,8 +13,3 @@ build
 *.iml
 *.ipr
 *.iws
-
-# Ignore Gradle directory
-gradle/
-gradlew
-gradlew.bat
