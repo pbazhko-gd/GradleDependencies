@@ -13,3 +13,6 @@ build
 *.iml
 *.ipr
 *.iws
+
+# Ignore Gradle directory
+gradle/
