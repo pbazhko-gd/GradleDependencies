@@ -1,15 +1,15 @@
-repositories {
-    // Maven local should contains: libraries, and books
-    mavenLocal()
-    // Use Maven Central for resolving dependencies (e.g scala-library)
-    mavenCentral()
-}
-
 plugins {
     id 'maven-publish'
     // Apply the scala Plugin to add support for Scala.
     id 'scala'
     id 'idea'
+}
+
+repositories {
+    // Maven local should contains: libraries, and books
+    mavenLocal()
+    // Use Maven Central for resolving dependencies (e.g scala-library)
+    mavenCentral()
 }
 
 dependencies {
