@@ -16,3 +16,5 @@ build
 
 # Ignore Gradle directory
 gradle/
+gradlew
+gradlew.bat
