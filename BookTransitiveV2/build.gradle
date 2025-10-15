@@ -1,3 +1,10 @@
+plugins {
+    id 'maven-publish'
+    // Apply the scala Plugin to add support for Scala.
+    id 'scala'
+    id 'idea'
+}
+
 repositories {
     // Maven local should contains: libraries, and books
     mavenLocal()
@@ -5,12 +12,6 @@ repositories {
     mavenCentral()
 }
 
-plugins {
-    id 'maven-publish'
-    // Apply the scala Plugin to add support for Scala.
-    id 'scala'
-    id 'idea'
-}
 
 dependencies {
     // Use Scala 2.18 in our library project
