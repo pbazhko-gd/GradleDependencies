@@ -16,6 +16,7 @@ repositories {
 dependencies {
     // Use Scala 2.18 in our library project
     compileOnly 'org.scala-lang:scala-library:2.13.8'
+
 }
 
 publishing {

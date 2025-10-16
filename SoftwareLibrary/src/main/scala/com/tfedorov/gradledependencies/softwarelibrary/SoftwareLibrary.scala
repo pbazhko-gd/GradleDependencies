@@ -5,6 +5,7 @@ package com.tfedorov.gradledependencies.softwarelibrary
 
 import com.tfedorov.gradledependencies.booktransitive.Book
 
+
 object SoftwareLibrary {
 
   def takeFromLibrary: String = "I take from the 'Software Library' " + Book.book
