@@ -3,14 +3,7 @@
  */
 package com.tfedorov.gradledependencies.booktransitive
 
-import org.slf4j.LoggerFactory
-
 object Book {
 
-  private val logger = LoggerFactory.getLogger(this.getClass)
-
-  def book: String = {
-    logger.info("Fetching book title")
-    " a book 'Machine Learning Yearning'. by Andrew Ng. (v1)"
-  }
+  def book: String = " a book 'Machine Learning Yearning'. by Andrew Ng. (v1)"
 }

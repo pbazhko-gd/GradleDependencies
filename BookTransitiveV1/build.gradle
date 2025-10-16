@@ -14,7 +14,6 @@ repositories {
 
 dependencies {
     compileOnly 'org.scala-lang:scala-library:2.13.8'
-    compileOnly 'org.slf4j:slf4j-api:2.0.17'
 }
 
 publishing {

@@ -15,7 +15,6 @@ repositories {
 dependencies {
     // Use Scala 2.13 in our library project
     compileOnly 'org.scala-lang:scala-library:2.13.8'
-    compileOnly 'org.slf4j:slf4j-api:2.0.17'
     implementation 'com.tfedorov.gradledependencies:booktransitive:0.1'
 }
 

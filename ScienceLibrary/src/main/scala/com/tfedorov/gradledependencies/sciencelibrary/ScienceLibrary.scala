@@ -4,14 +4,8 @@
 package com.tfedorov.gradledependencies.sciencelibrary
 
 import com.tfedorov.gradledependencies.booktransitive.Book
-import org.slf4j.LoggerFactory
 
 object ScienceLibrary {
 
-  private val logger = LoggerFactory.getLogger(this.getClass)
-
-  def takeFromLibrary: String = {
-    logger.info("Fetching library name")
-    "I take from the 'Science Library'  " + Book.book
-  }
+  def takeFromLibrary: String = "I take from the 'Science Library'  " + Book.book
 }
