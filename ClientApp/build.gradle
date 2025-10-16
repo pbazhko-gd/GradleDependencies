@@ -18,6 +18,12 @@ dependencies {
     implementation 'com.tfedorov.gradledependencies:softwarelibrary:0.1'
     implementation 'com.tfedorov.gradledependencies:sciencelibrary:0.1'
 
+    // implementation('com.tfedorov.gradledependencies:booktransitive:0.1!!')
+    implementation('com.tfedorov.gradledependencies:booktransitive') {
+        version {
+            strictly '0.1'
+        }
+    }
 }
 
 application {
