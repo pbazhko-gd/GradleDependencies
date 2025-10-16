@@ -19,6 +19,13 @@ dependencies {
     implementation 'com.tfedorov.gradledependencies:sciencelibrary:0.1'
 
 }
+
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        force 'com.tfedorov.gradledependencies:booktransitive:0.1'
+    }
 }
