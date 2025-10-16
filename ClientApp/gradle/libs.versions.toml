@@ -1,0 +1,9 @@
+[versions]
+booktransitive = { strictly = "0.1" }
+softwarelibrary = "0.1"
+sciencelibrary = "0.1"
+
+[libraries]
+booktransitive = { module = "com.tfedorov.gradledependencies:booktransitive", version.ref = "booktransitive" }
+softwarelibrary = { module = "com.tfedorov.gradledependencies:softwarelibrary", version.ref = "softwarelibrary" }
+sciencelibrary = { module = "com.tfedorov.gradledependencies:sciencelibrary", version.ref = "sciencelibrary" }
