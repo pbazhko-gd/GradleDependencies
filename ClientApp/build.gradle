@@ -17,7 +17,7 @@ dependencies {
     implementation 'org.scala-lang:scala-library:2.13.8'
     implementation 'com.tfedorov.gradledependencies:softwarelibrary:0.1'
     implementation 'com.tfedorov.gradledependencies:sciencelibrary:0.1'
-
+    runtimeOnly("org.slf4j:slf4j-simple:2.0.17")
 }
 
 application {

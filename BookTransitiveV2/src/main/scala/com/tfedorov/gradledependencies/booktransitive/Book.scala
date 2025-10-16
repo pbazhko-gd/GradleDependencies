@@ -3,7 +3,14 @@
  */
 package com.tfedorov.gradledependencies.booktransitive
 
+import org.slf4j.LoggerFactory
+
 object Book {
 
-  def book: String = " a book 'Programming in Scala Fifth Edition 5st edition.' by Martin Odersky (v2)"
+  private val logger = LoggerFactory.getLogger(this.getClass)
+
+  def book: String = {
+    logger.info("Fetching book title")
+    " a book 'Programming in Scala Fifth Edition 5st edition.' by Martin Odersky (v2)"
+  }
 }
