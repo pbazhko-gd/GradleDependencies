@@ -3,7 +3,6 @@ plugins {
     // Apply the scala Plugin to add support for Scala.
     id 'scala'
     id 'idea'
-
 }
 
 repositories {

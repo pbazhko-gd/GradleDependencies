@@ -3,6 +3,7 @@ plugins {
     id 'scala'
     id 'idea'
     id 'application'
+    id 'org.gradlex.jvm-dependency-conflict-resolution' version "2.4"
 }
 
 repositories {
@@ -17,9 +18,16 @@ dependencies {
     implementation 'org.scala-lang:scala-library:2.13.8'
     implementation 'com.tfedorov.gradledependencies:softwarelibrary:0.1'
     implementation 'com.tfedorov.gradledependencies:sciencelibrary:0.1'
-
 }
 
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
+}
+
+jvmDependencyConflicts {
+    patch {
+        module("com.tfedorov.gradledependencies:softwarelibrary") {
+            removeDependency("com.tfedorov.gradledependencies:booktransitive")
+        }
+    }
 }
