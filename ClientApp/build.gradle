@@ -23,3 +23,13 @@ dependencies {
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
 }
+
+configurations.configureEach {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'com.tfedorov.gradledependencies' &&
+                details.requested.name == 'booktransitive' &&
+                details.requested.version == '0.2') {
+            throw new GradleException("Version 0.2 of 'com.tfedorov.gradledependencies:booktransitive' is not allowed.")
+        }
+    }
+}
