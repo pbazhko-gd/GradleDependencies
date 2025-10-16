@@ -19,6 +19,7 @@ dependencies {
     implementation 'com.tfedorov.gradledependencies:sciencelibrary:0.1'
 
 }
+
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
 }
