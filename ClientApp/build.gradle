@@ -23,3 +23,9 @@ dependencies {
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
 }
+
+configurations.configureEach {
+    resolutionStrategy {
+        failOnVersionConflict()
+    }
+}
