@@ -3,7 +3,6 @@ plugins {
     id 'scala'
     id 'idea'
     id 'application'
-//    id 'org.gradlex.jvm-dependency-conflict-resolution' version "2.4"
 }
 
 repositories {
@@ -24,39 +23,3 @@ dependencies {
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
 }
-
-//configurations.configureEach {
-//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-//        if (details.requested.group == 'com.tfedorov.gradledependencies' && details.requested.name == 'booktransitive') {
-//            def overrideVersion = System.getenv("BOOK_TRANSITIVE_VERSION")
-//            if (overrideVersion) {
-//                resolutionStrategy.force "com.tfedorov.gradledependencies:booktransitive:$overrideVersion"
-//                println "Using booktransitive version: $overrideVersion"
-//            }
-//        }
-//    }
-//}
-
-//configurations.configureEach {
-//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-//        if (details.requested.group == 'com.tfedorov.gradledependencies' &&
-//                details.requested.name == 'booktransitive' &&
-//                details.requested.version == '0.2') {
-//            throw new GradleException("Version 0.2 of 'com.tfedorov.gradledependencies:booktransitive' is not allowed.")
-//        }
-//    }
-//}
-
-//configurations.configureEach {
-//    resolutionStrategy {
-//        failOnVersionConflict()
-//    }
-//}
-
-//jvmDependencyConflicts {
-//    patch {
-//        module("com.tfedorov.gradledependencies:softwarelibrary") {
-//            removeDependency("com.tfedorov.gradledependencies:booktransitive")
-//        }
-//    }
-//}
