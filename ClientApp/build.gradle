@@ -23,3 +23,15 @@ dependencies {
 application {
     mainClass = 'com.tfedorov.gradledependencies.client.ClientApp'
 }
+
+configurations.configureEach {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.group == 'com.tfedorov.gradledependencies' && details.requested.name == 'booktransitive') {
+            def overrideVersion = System.getenv("BOOK_TRANSITIVE_VERSION")
+            if (overrideVersion) {
+                resolutionStrategy.force "com.tfedorov.gradledependencies:booktransitive:$overrideVersion"
+                println "Using booktransitive version: $overrideVersion"
+            }
+        }
+    }
+}
