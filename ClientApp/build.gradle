@@ -17,6 +17,8 @@ dependencies {
     implementation 'org.scala-lang:scala-library:2.13.8'
     implementation 'com.tfedorov.gradledependencies:softwarelibrary:0.1'
     implementation 'com.tfedorov.gradledependencies:sciencelibrary:0.1'
+
+    // implementation('com.tfedorov.gradledependencies:booktransitive:0.1!!')
     implementation('com.tfedorov.gradledependencies:booktransitive') {
         version {
             strictly '0.1'
